@@ -6,14 +6,21 @@ Fonds animés en WebGL (Three.js), 100 % navigateur, pensés pour être placés 
 
 | Fond | Description |
 | --- | --- |
+| **Dégradés doux** | |
 | Mesh gradient | Dégradé fluide de 4 couleurs, façon Stripe |
+| Mesh 3×3 | Maillage 3×3 de couleurs (façon Figma / Illustrator) dont les couleurs tournent lentement |
+| Vagues de couleur | Bandes diagonales ondulantes empilées, avec ombres douces |
+| Lampe à lave | Blobs aux bords doux qui fusionnent |
+| Halo de scène | Lueurs de projecteurs montant d'un bord, style keynote |
+| Tourbillon | Dégradé conique qui tourne lentement |
+| Orbes minimalistes | Grosses taches de couleur très lentes |
+| **Textures & mouvement** | |
 | Aurore | Rubans lumineux ondulants |
 | Soie / fumée | Plis soyeux par domain-warping |
 | Lignes ondulantes | Paysage de lignes en perspective (option grille) |
 | Réseau de particules | Constellation de points reliés |
 | Bokeh | Disques lumineux flous qui dérivent |
 | Formes géométriques | Polyèdres low-poly qui flottent (plein, filaire, verre) |
-| Orbes minimalistes | Grosses taches de couleur très lentes |
 
 Chaque fond a ses propres réglages, plus des réglages communs : palette (11 prédéfinies ou 4 couleurs + arrière-plan au choix), vitesse, intensité, échelle, grain, vignettage, luminosité, saturation. Le changement de fond se fait en fondu enchaîné (durée réglable).
 
@@ -65,7 +72,7 @@ L'URL contient toute la configuration (`#cfg=…`) et masque le panneau (`?ui=0`
 ## Conseils
 
 - Sur une palette claire, éviter les modes additifs (Aurore, Bokeh « mode lumière ») qui saturent vers le blanc, et baisser le vignettage.
-- Les fonds shader (mesh, soie, aurore, orbes) sont les plus légers ; en 4K sur une petite machine, préférer 30 i/s (dossier **Rendu**).
+- Les fonds shader (tous les dégradés doux, soie, aurore) sont les plus légers ; en 4K sur une petite machine, préférer 30 i/s (dossier **Rendu**).
 - Un peu de grain évite les effets d'escalier dans les dégradés sur les projecteurs / murs LED.
 
 ## Ajouter un fond

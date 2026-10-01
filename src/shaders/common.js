@@ -103,6 +103,17 @@ vec3 palette(float t) {
   c = mix(c, uColors[2], clamp(t - 1.0, 0.0, 1.0));
   return mix(c, uColors[3], clamp(t - 2.0, 0.0, 1.0));
 }
+
+vec3 paletteColor(int i) {
+  return uColors[i - (i / 4) * 4];
+}
+
+// Cyclic version: 1 -> 2 -> 3 -> 4 -> 1, t wraps.
+vec3 paletteLoop(float t) {
+  t = fract(t) * 4.0;
+  int i = int(floor(t));
+  return mix(paletteColor(i), paletteColor(i + 1), smoothstep(0.0, 1.0, fract(t)));
+}
 `;
 
 export const FULLSCREEN_VERT = /* glsl */ `
