@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PiP Backgrounds</title>
+    <meta name="description" content="Fonds animés WebGL pour PiP d'events corporate" />
+  </head>
+  <body>
+    <canvas id="stage"></canvas>
+    <img id="logo" alt="" hidden />
+    <div id="toast" role="status" aria-live="polite"></div>
+    <div id="output-hint" hidden>Clique n’importe où pour passer en plein écran</div>
+    <div id="help" hidden>
+      <h2>Raccourcis</h2>
+      <dl>
+        <dt>H</dt><dd>Masquer / afficher le panneau</dd>
+        <dt>F</dt><dd>Plein écran</dd>
+        <dt>Espace</dt><dd>Pause</dd>
+        <dt>← / →</dt><dd>Fond précédent / suivant</dd>
+        <dt>R</dt><dd>Mélanger l'ordre des couleurs</dd>
+        <dt>?</dt><dd>Cette aide</dd>
+      </dl>
+      <p>« Ouvrir la sortie » (dossier Sortie) ouvre une fenêtre de rendu synchronisée, à placer sur le 2e écran.</p>
+      <p>URL avec <code>?ui=0</code> → panneau masqué (idéal en source navigateur OBS / vMix).</p>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

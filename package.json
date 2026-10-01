@@ -1,0 +1,19 @@
+{
+  "name": "pip-backgrounds",
+  "version": "1.0.0",
+  "description": "Fonds animés WebGL (Three.js) pour les PiP d'events corporate — rendu live navigateur / OBS / vMix",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "lil-gui": "^0.21.0",
+    "three": "^0.186.1"
+  },
+  "devDependencies": {
+    "vite": "^8.3.1"
+  }
+}
